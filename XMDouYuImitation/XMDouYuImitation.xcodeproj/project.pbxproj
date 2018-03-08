@@ -53,7 +53,6 @@
 		86268DAB2050D77F00085157 /* XMDouYuImitation */ = {
 			isa = PBXGroup;
 			children = (
-				86268DDC2051074800085157 /* Classes */,
 				86268DD5205105C100085157 /* Supporting Files */,
 			);
 			path = XMDouYuImitation;
@@ -69,61 +68,6 @@
 				86268DCF205105AD00085157 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		86268DDC2051074800085157 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				86268DE12051074800085157 /* Main */,
-				86268DDD2051074800085157 /* Home */,
-				86268DE02051074800085157 /* Live */,
-				86268DDE2051074800085157 /* Follow */,
-				86268DDF2051074800085157 /* Profile */,
-				86268DE22051074800085157 /* Helper */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		86268DDD2051074800085157 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		86268DDE2051074800085157 /* Follow */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Follow;
-			sourceTree = "<group>";
-		};
-		86268DDF2051074800085157 /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
-		86268DE02051074800085157 /* Live */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Live;
-			sourceTree = "<group>";
-		};
-		86268DE12051074800085157 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
-		86268DE22051074800085157 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
