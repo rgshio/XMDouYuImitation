@@ -96,7 +96,7 @@
 				TargetAttributes = {
 					86268DA82050D77F00085157 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -274,11 +274,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = JX724T69DW;
 				INFOPLIST_FILE = XMDouYuImitation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rgshio.XMDouYuImitation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hongyin.devtest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0d11520d-0306-45e4-97fa-765de473c68f";
+				PROVISIONING_PROFILE_SPECIFIER = devtest;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -288,11 +293,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = JX724T69DW;
 				INFOPLIST_FILE = XMDouYuImitation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rgshio.XMDouYuImitation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hongyin.devtest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0d11520d-0306-45e4-97fa-765de473c68f";
+				PROVISIONING_PROFILE_SPECIFIER = devtest;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
