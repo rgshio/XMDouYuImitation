@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		86268DAD2050D77F00085157 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86268DAC2050D77F00085157 /* AppDelegate.swift */; };
-		86268DAF2050D77F00085157 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86268DAE2050D77F00085157 /* ViewController.swift */; };
 		86268DB22050D77F00085157 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86268DB02050D77F00085157 /* Main.storyboard */; };
 		86268DB42050D77F00085157 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86268DB32050D77F00085157 /* Assets.xcassets */; };
 		86268DB72050D77F00085157 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86268DB52050D77F00085157 /* LaunchScreen.storyboard */; };
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		86268DA92050D77F00085157 /* XMDouYuImitation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMDouYuImitation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86268DAC2050D77F00085157 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		86268DAE2050D77F00085157 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		86268DB12050D77F00085157 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		86268DB32050D77F00085157 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86268DB62050D77F00085157 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +52,78 @@
 		86268DAB2050D77F00085157 /* XMDouYuImitation */ = {
 			isa = PBXGroup;
 			children = (
+				86268DC02050E3CB00085157 /* Classes */,
+				86268DC72050E3FA00085157 /* Supporting Files */,
+			);
+			path = XMDouYuImitation;
+			sourceTree = "<group>";
+		};
+		86268DC02050E3CB00085157 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				86268DC52050E3CB00085157 /* Main */,
+				86268DC42050E3CB00085157 /* Live */,
+				86268DC12050E3CB00085157 /* Home */,
+				86268DC22050E3CB00085157 /* Follow */,
+				86268DC32050E3CB00085157 /* Profile */,
+				86268DC62050E3CB00085157 /* Helper */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		86268DC12050E3CB00085157 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		86268DC22050E3CB00085157 /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		86268DC32050E3CB00085157 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		86268DC42050E3CB00085157 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		86268DC52050E3CB00085157 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		86268DC62050E3CB00085157 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		86268DC72050E3FA00085157 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				86268DAC2050D77F00085157 /* AppDelegate.swift */,
-				86268DAE2050D77F00085157 /* ViewController.swift */,
 				86268DB02050D77F00085157 /* Main.storyboard */,
 				86268DB32050D77F00085157 /* Assets.xcassets */,
 				86268DB52050D77F00085157 /* LaunchScreen.storyboard */,
 				86268DB82050D77F00085157 /* Info.plist */,
 			);
-			path = XMDouYuImitation;
+			name = "Supporting Files";
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +198,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86268DAF2050D77F00085157 /* ViewController.swift in Sources */,
 				86268DAD2050D77F00085157 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
