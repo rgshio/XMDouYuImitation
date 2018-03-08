@@ -12,12 +12,34 @@ private let kTitleViewHeight: CGFloat = 40
 
 class HomeViewController: UIViewController {
     //MARK: 懒加载属性
-    private lazy var pageTitleView : XMPageTitleView = {
+    private lazy var pageTitleView: XMPageTitleView = {
         let titleViewFrame = CGRect(x: 0, y: kStatusBarHeight+kNavigationBarHeight, width: kScreenWidth, height: kTitleViewHeight)
         let titles = ["推荐", "游戏", "娱乐", "趣玩"]
         let titleView = XMPageTitleView(frame: titleViewFrame, titles: titles)
         
         return titleView
+    }()
+    
+    private lazy var pageContentView: XMPageContentView = {
+        ///设置frame
+        let contentViewHeight = kScreenHeight-kStatusBarHeight-kNavigationBarHeight-kTitleViewHeight
+        let contentViewFrame = CGRect(x: 0, y: kStatusBarHeight+kNavigationBarHeight+kTitleViewHeight, width: kScreenWidth, height: contentViewHeight)
+        
+        ///设置所有的子控制器
+        var childViewControllers = [UIViewController]()
+        for _ in 0..<4 {
+            let viewController = UIViewController()
+            if childViewControllers.count%2 == 0 {
+                viewController.view.backgroundColor = UIColor.red
+            }else {
+                viewController.view.backgroundColor = UIColor.green
+            }
+            childViewControllers.append(viewController)
+        }
+        
+        let contentView = XMPageContentView(frame: contentViewFrame, childViewControllers: childViewControllers, parentViewController: self)
+        
+        return contentView
     }()
 
     override func viewDidLoad() {
@@ -39,6 +61,9 @@ extension HomeViewController {
         
         ///添加titleView
         view.addSubview(pageTitleView)
+        
+        ///添加contentView
+        view.addSubview(pageContentView)
     }
     
     private func setNavigationBar() {
